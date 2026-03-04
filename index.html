@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ship Beat'em Up Beta</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="hud-wrap">
+    <section class="hud" aria-label="HUD">
+      <div id="hpBar" class="bar hp"><span>HP</span><b></b></div>
+      <div id="shieldBar" class="bar shield"><span>Shield</span><b></b></div>
+      <div id="armorBar" class="bar armor"><span>Armor</span><b></b></div>
+      <div id="xpBar" class="bar xp"><span>XP</span><b></b></div>
+      <div class="stats" id="statsText"></div>
+      <div class="buffs" id="buffPanel"></div>
+      <div class="tips">
+        <p>Move: WASD / Arrows | Aim: Mouse | Fire: Hold LMB</p>
+        <p>Abilities: 1 Dash+Mine, 2 Overclock, 3 Info (explosive is card buff), 4 Fleet Summon</p>
+        <p>Extra: Q Aegis Pulse, E Orb Frenzy, F Hunter Mark, G Fleet Command, Z Blink Mine</p>
+        <p>Toggle Debug: F3 | Pause: P | Level and Prestige are auto lootbox rolls</p>
+      </div>
+    </section>
+    <section class="cards" id="cardPanel" aria-label="Card Choices"></section>
+  </main>
+  <canvas id="game" aria-label="Game canvas"></canvas>
+  <script src="game.js"></script>
+</body>
+</html>
